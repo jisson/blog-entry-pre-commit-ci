@@ -30,3 +30,11 @@ repos:
         name: bandit (python)
         args: ["-c", "pyproject.toml"]
         additional_dependencies: ["bandit[toml]"]
+-   repo: local
+    hooks:
+    -    id: migrations
+         name: Check forgotten migrations (django)
+         entry: python manage.py makemigrations --check
+         language: system
+         types: [python]
+         pass_filenames: false
