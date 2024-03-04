@@ -12,6 +12,7 @@ executing==2.0.1
 filelock==3.13.1
 identify==2.5.35
 ipython==8.22.1
+isort==5.13.2
 jedi==0.19.1
 matplotlib-inline==0.1.6
 mypy-extensions==1.0.0

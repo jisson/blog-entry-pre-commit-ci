@@ -1,3 +1,9 @@
 [tool.black]
 line-length = 88
 target-version = ['py310']
+
+[tool.isort]
+line_length = 88
+py_version=310
+profile = "black"
+src_paths = ["test_project"]
