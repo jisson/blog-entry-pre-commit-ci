@@ -11,3 +11,8 @@ src_paths = ["test_project"]
 # https://bandit.readthedocs.io/en/latest/config.html
 [tool.bandit]
 exclude_dirs = ["tests"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "test_project.settings.dev"
+python_files = ["test_*.py"]
+addopts = "--reuse-db"
